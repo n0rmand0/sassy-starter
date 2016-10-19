@@ -1,0 +1,39 @@
+// All styles and structure are based on Scalable & Modular Architecture for CSS (SMACSS).
+// https://smacss.com/
+
+// UTILITY
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "utility/grid-settings";
+@import "utility/variables";
+@import "utility/mixins";
+@import "utility/extends";
+@import "utility/fonts";
+@import "utility/animations";
+
+// BASE
+@import "base/reset";
+@import "base/buttons";
+@import "base/forms";
+@import "base/lists";
+@import "base/media";
+@import "base/tables";
+@import "base/typography";
+
+// LAYOUT
+@import "layouts/grid";
+@import "layouts/sections";
+@import "layouts/header";
+@import "layouts/footer";
+
+// SHARED MODULES
+@import "modules/global";
+
+// PAGE MODULES
+@import "pages/home";
+
+// THEMES
+@import "themes/ie";
+@import "themes/print";
+
+// VENDOR

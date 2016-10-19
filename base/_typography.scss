@@ -1,0 +1,99 @@
+// BASE TYPOGRAPHY STYLES
+////////////////////////////////////////////////////////////////
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: modular-scale(1);
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin: 0 0 ($base-spacing / 2);
+}
+
+a {
+  transition: color 0.2s;
+  color: $action-color;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 30%);
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+
+// Alternate section colors
+////////////////////////////////////////////////////////////////
+%inverse {
+  color: $inverse-font-color;
+
+  a {
+    color: $inverse-action-color;
+
+    &:active,
+    &:focus,
+    &:hover  {
+      color: tint($inverse-action-color, 60%);
+      outline: none;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $inverse-font-color;
+  }
+
+}
