@@ -6,11 +6,11 @@
 @import "utility/variables";
 @import "utility/mixins";
 @import "utility/extends";
-@import "utility/fonts";
-@import "utility/animations";
 
 // BASE
 @import "base/reset";
+@import "base/fonts";
+@import "base/animations";
 @import "base/buttons";
 @import "base/forms";
 @import "base/lists";
