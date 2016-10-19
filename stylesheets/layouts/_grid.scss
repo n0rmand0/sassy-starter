@@ -13,6 +13,7 @@
   }
 }
 
+// 2/3 layout
 .l-main {
   @include span-columns(8);
   @include clearfix;
@@ -26,6 +27,7 @@
   }
 }
 
+// 1/3 layout
 .l-sidebar{
   @include span-columns(4);
   @include clearfix;
@@ -47,6 +49,7 @@
   }
 }
 
+// 1/2 layout
 .l-split {
   @include span-columns(6);
   @include clearfix;
