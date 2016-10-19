@@ -5,7 +5,7 @@ body {
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  line-height: $base-line-height;
+  line-height: 1.5;
 }
 
 h1,
@@ -15,8 +15,7 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: modular-scale(1);
-  line-height: $heading-line-height;
+  line-height: 1.2;
   margin: 0 0 $small-spacing;
 }
 
@@ -46,7 +45,7 @@ h6 {
 }
 
 p {
-  margin: 0 0 ($base-spacing / 2);
+  margin: 0 0 $small-spacing;
 }
 
 a {
