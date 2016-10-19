@@ -5,7 +5,7 @@ A Sass boilerplate organized with [SMACSS](https://smacss.com/) and topped with 
 
 ## Get Started
 
-These boilerplate requires mixins and extends from **Bourbon**, and **Neat**.
+This boilerplate requires mixins and extends from **Bourbon**, and **Neat**.
 
 - Install Neat and Bourbon into the stylesheet root directory start Sassing.
   - **Bourbon** - [bourbon.io](http://bourbon.io/)
