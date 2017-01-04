@@ -1,12 +1,27 @@
-// GRID LAYOUTS - canned layouts, layout-based rules (prefixed with 'l')
+// GRID LAYOUT - layout-based rules, canned layout modules (modules prefixed with 'l')
 ////////////////////////////////////////////////////////////////
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
 
 .container {
   @include outer-container;
   @include clearfix;
   position: relative;
-  @include media($medium) {
-    padding: 0 20px;
+  @include media($large) {
+    padding: 0 $base-spacing;
   }
   > *:last-child {
     margin-bottom: 0;
