@@ -1,14 +1,14 @@
 // SECTION LAYOUTS
 ////////////////////////////////////////////////////////////////
 
-.section-primary {
+.section--primary {
   position: relative;
   padding: $large-spacing 0;
   background:  $base-background-color;
   z-index: 99;
 }
 
-.section-secondary {
+.section--secondary {
   @extend %inverse;
   position: relative;
   padding: $large-spacing 0;
