@@ -8,11 +8,19 @@ $gutter: 80px;
 $grid-columns: 12;
 $max-width: 1200px;
 
-// Neat Breakpoints
-$extra-large: new-breakpoint(min-width ($max-width +1) 12);
-$large: new-breakpoint(max-width $max-width 12);
-$medium: new-breakpoint(max-width 1000px 12);
-$small: new-breakpoint(max-width 750px 6);
-$extra-small: new-breakpoint(max-width 450px 6);
+// Neat Breakpoints (mobile first)
+$extra-large: new-breakpoint(min-width ($max-width) 12);
+$large: new-breakpoint(min-width 900px 12);
+$medium: new-breakpoint(min-width 670px 12);
+$small: new-breakpoint(min-width 450px 6);
 
-$nav-break: new-breakpoint(max-width 750px 12);
+$nav-break: new-breakpoint(min-width 750px 12);
+
+
+// Neat Breakpoints (desktop first)
+// $large: new-breakpoint(max-width ($max-width) 12);
+// $medium: new-breakpoint(max-width 900px 12);
+// $small: new-breakpoint(max-width 670px 12);
+// $extra-small: new-breakpoint(max-width 450px 6);
+//
+// $nav-break: new-breakpoint(max-width 750px 12);
