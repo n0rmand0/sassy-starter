@@ -1,4 +1,4 @@
-// GRID LAYOUT - layout-based rules, canned layout modules (modules prefixed with 'l')
+// GRID LAYOUT - mobile first layout-based rules, canned layout modules (modules prefixed with 'l')
 ////////////////////////////////////////////////////////////////
 
 html {
@@ -16,9 +16,6 @@ body {
   height: 100%;
 }
 
-// mobile first layout modules
-////////////////////////////////////////////////////////////////
-
 .container {
   @include outer-container;
   @include clearfix;
@@ -27,6 +24,11 @@ body {
   @include media($extra-large) {
     padding: 0 ;
   }
+}
+
+// row
+.l-row {
+  @include clearfix;
 }
 
 // 2/3 layout
@@ -52,43 +54,3 @@ body {
     @include clearfix;
   }
 }
-
-
-// desktop first layout modules
-////////////////////////////////////////////////////////////////
-//
-// .container {
-//   @include outer-container;
-//   @include clearfix;
-//   position: relative;
-//   @include media($large) {
-//     padding: 0 $base-spacing;
-//   }
-// }
-//
-// // 2/3 layout
-// .l-long {
-//   @include clearfix;
-//   @include span-columns(8);
-//   @include media($large) {
-//     width: 100%;
-//   }
-// }
-//
-// // 1/2 layout
-// .l-split {
-//   @include span-columns(6);
-//   @include clearfix;
-//   @include media($large) {
-//     width: 100%;
-//   }
-// }
-//
-// // 1/3 layout
-// .l-short {
-//   @include span-columns(4);
-//   @include clearfix;
-//   @include media($large) {
-//     width: 100%;
-//   }
-// }

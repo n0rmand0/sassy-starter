@@ -61,6 +61,10 @@ a {
   }
 }
 
+pre {
+  white-space: pre-wrap;
+}
+
 hr {
   border-bottom: $base-border;
   border-left: none;
