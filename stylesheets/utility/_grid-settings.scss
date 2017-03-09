@@ -1,17 +1,37 @@
 // NEAT GRID SETTINGS
 ////////////////////////////////////////////////////////////////
 
-@import "neat/neat-helpers";
+$neat-grid: (
+  columns: 12,
+  gutter: $base-gutter,
+);
 
-// Neat overrides
-$gutter: 80px;
-$grid-columns: 12;
-$max-width: 1200px;
+$extra-large: (
+  columns: 12,
+  gutter: $base-gutter,
+  media: $max-width
+);
 
-$extra-large: new-breakpoint(min-width ($max-width) 12);
-$large: new-breakpoint(min-width 900px 12);
-$medium: new-breakpoint(min-width 670px 12);
-$small: new-breakpoint(min-width 450px 6);
-$extra-small: new-breakpoint(max-width 449px 6);
+$large: (
+  columns: 12,
+  gutter: $base-gutter,
+  media: 900px
+);
 
-$nav-break: new-breakpoint(min-width 750px 12);
+$medium: (
+  columns: 12,
+  gutter: $base-gutter,
+  media: 670px
+);
+
+$small: (
+  columns: 12,
+  gutter: $base-gutter,
+  media: 450px
+);
+
+$nav-break: (
+  columns: 12,
+  gutter: $base-gutter,
+  media: 1200px
+);
