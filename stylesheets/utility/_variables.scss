@@ -8,10 +8,10 @@ $base-font-size: 1em;
 
 // Sizes
 $max-width: 1280px;
-$base-gutter: 40px;
 $base-spacing: 2rem;
 $small-spacing: $base-spacing / 2;
 $large-spacing: $base-spacing * 2;
+$base-gutter: $base-spacing;
 
 // Colors
 $dark-gray: #333;
