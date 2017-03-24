@@ -3,23 +3,24 @@
 A Sass boilerplate organized with [SMACSS](https://smacss.com/) and topped with useful scaffold styles and variables.
 
 ## Structure
+- **all.scss:** The main entry file.  All partial imports go here.
 
-- **utility:** Sass utility helper folder
-  - **variables:** Global variables, default colors, default spacing values
-  - **grid-settings:** Breakpoints, max width, and neat setup
-  - **mixins:** global mixins
-  - **extends:** global extends
+- **utility:** Sass utility helpers
+  - **variables:** Default colors, sizes, spacing, etc.
+  - **grid-settings:** Breakpoints and neat setup
+  - **mixins:** Global mixins
+  - **extends:** Global extends
 
 - **base:** All basic element of the site
   - **reset:** CSS browser reset
   - **fonts:** Font imports
   - **animations:** Global animation keyframes
   - **buttons:** Global link and button styles
-  - **forms:** Base form styles
-  - **lists:** Base list styles
-  - **media:** Base media styles. video, img, etc
-  - **tables:** Base table styles
-  - **typography:** Body type, H tags, p etc
+  - **forms:** Form styles
+  - **lists:** List styles
+  - **media:** Media styles. video, img, picture, etc.
+  - **tables:** Table styles
+  - **typography:** Body typography, H tags, p, etc.
 
 - **layout** All styles used to lay elements out on the page
   - **grid:** Canned layout modules (modules prefixed with 'l')
@@ -27,13 +28,13 @@ A Sass boilerplate organized with [SMACSS](https://smacss.com/) and topped with 
   - **header:** Site header styles
   - **footer:** Site footer styles
 
-- **modules**
-  - **global:**  Modules that can be used anywhere.  Break bigger modules into their own file.
+- **modules** Modules that can be used anywhere. Break bigger modules into their own file.
+  - **global:** Global modules
 
-- **pages:** Page specific styles
+- **pages:** Page specific styles that don't fit into modules
   - **home:** Home page styles
 
-- **themes*** All theme override styles
+- **themes*** All themes and override styles
   - **ie:** Internet Explorer fixes
   - **print:** Print styles
 

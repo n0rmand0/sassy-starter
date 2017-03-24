@@ -9,36 +9,29 @@ $neat-grid: (
 $extra-large: (
   columns: 12,
   gutter: $base-gutter,
-  media: $max-width
+  media: (min-width: $max-width)
 );
 
 $large: (
   columns: 12,
   gutter: $base-gutter,
-  media: 900px
+  media: (min-width: 900px)
 );
 
 $medium: (
   columns: 12,
   gutter: $base-gutter,
-  media: 670px
+  media: (min-width: 670px)
 );
 
 $small: (
   columns: 12,
   gutter: $base-gutter,
-  media: 450px
+  media: (min-width: 450px)
 );
 
 $nav-break: (
   columns: 12,
   gutter: $base-gutter,
-  media: 1200px
+  media: (min-width: 1200px)
 );
-
-// media queries
-// $extra-large: (min-width: $max-width);
-// $large: (min-width: 900px);
-// $medium: (min-width: 670px);
-// $small: (min-width: 450px);
-// $nav-break: (min-width: 1200px);
