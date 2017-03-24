@@ -19,7 +19,8 @@ label {
   margin-bottom: $small-spacing / 2;
 }
 
-#{$all-text-inputs},
+input,
+textarea,
 select {
   display: block;
   width: 100%;
