@@ -70,5 +70,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: $small-spacing / 2;
+  width: auto;
+  margin: 0 $small-spacing/2 0 0;
+  padding: 0;
 }
