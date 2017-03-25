@@ -3,35 +3,35 @@
 
 $neat-grid: (
   columns: 12,
-  gutter: $base-gutter,
+  gutter: $base-spacing,
 );
 
 $extra-large: (
   columns: 12,
-  gutter: $base-gutter,
+  gutter: $base-spacing,
   media: '(min-width: $max-width)'
 );
 
 $large: (
   columns: 12,
-  gutter: $base-gutter,
+  gutter: $base-spacing,
   media: '(min-width: 900px)'
 );
 
 $medium: (
   columns: 12,
-  gutter: $base-gutter,
+  gutter: $base-spacing,
   media: '(min-width: 670px)'
 );
 
 $small: (
   columns: 12,
-  gutter: $base-gutter,
+  gutter: $base-spacing,
   media: '(min-width: 450px)'
 );
 
 $nav-break: (
   columns: 12,
-  gutter: $base-gutter,
+  gutter: $base-spacing,
   media: '(min-width: 1200px)'
 );
