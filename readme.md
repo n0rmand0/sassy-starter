@@ -1,6 +1,6 @@
 # Sassy Starter
 
-A Sass boilerplate organized with [SMACSS](https://smacss.com/) and topped with useful scaffold styles and variables.
+A Sass boilerplate organized with [SMACSS](https://smacss.com/), and topped with useful scaffold styles and variables with [BEM](http://getbem.com/introduction/) naming conventions.
 
 ## Structure
 - **all.scss:** The main entry file.  All partial imports go here.
@@ -20,13 +20,13 @@ A Sass boilerplate organized with [SMACSS](https://smacss.com/) and topped with 
   - **lists:** List styles
   - **media:** Media styles. video, img, picture, etc.
   - **tables:** Table styles
-  - **typography:** Body typography, H tags, p, etc.
+  - **typography:** Body typography, H, p tags, etc.
 
 - **layout** All styles used to lay elements out on the page
-  - **grid:** Canned layout modules (modules prefixed with 'l')
-  - **sections:** Site section styles
-  - **header:** Site header styles
-  - **footer:** Site footer styles
+  - **grid:** Canned layout styles that can be used anywhere (modules prefixed with 'l')
+  - **sections:** Site sections layout styles
+  - **header:** Site header layout styles
+  - **footer:** Site footer layout styles
 
 - **modules** Modules that can be used anywhere. Break bigger modules into their own file.
   - **global:** Global modules
@@ -35,7 +35,7 @@ A Sass boilerplate organized with [SMACSS](https://smacss.com/) and topped with 
   - **home:** Home page styles
 
 - **themes*** All themes and override styles
-  - **ie:** Internet Explorer fixes
+  - **ie:** Internet Explorer styles
   - **print:** Print styles
 
 

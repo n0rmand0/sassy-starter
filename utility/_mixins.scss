@@ -1,11 +1,6 @@
 // GLOBAL MIXINS
 ////////////////////////////////////////////////////////////////
 
-@mixin omega-reset($nth, $fg-gutter) {
-  &:nth-child(#{$nth}) { margin-right: flex-gutter($fg-gutter); }
-  &:nth-child(#{$nth}+1) { clear: none }
-}
-
 @mixin font-smoothing($value: on) {
     @if $value == on {
         -webkit-font-smoothing: antialiased;

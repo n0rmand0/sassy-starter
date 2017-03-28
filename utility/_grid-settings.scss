@@ -1,4 +1,4 @@
-// NEAT GRID SETTINGS
+// NEAT GRID SETTINGS - See http://neat.bourbon.io/ for documentation
 ////////////////////////////////////////////////////////////////
 
 $neat-grid: (
@@ -33,5 +33,5 @@ $small: (
 $nav-break: (
   columns: 12,
   gutter: $base-spacing,
-  media: '(min-width: 1200px)'
+  media: '(min-width: 900px)'
 );
