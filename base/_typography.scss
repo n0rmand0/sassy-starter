@@ -56,7 +56,7 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 30%);
+    color: darken($action-color, 20%);
     outline: none;
   }
 }
@@ -85,7 +85,7 @@ hr {
     &:active,
     &:focus,
     &:hover  {
-      color: tint($inverse-action-color, 60%);
+      color: lighten($inverse-action-color, 20%);
       outline: none;
     }
   }

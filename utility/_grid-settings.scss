@@ -1,5 +1,6 @@
 // NEAT GRID SETTINGS - See http://neat.bourbon.io/ for documentation
 ////////////////////////////////////////////////////////////////
+// Mobile first:
 
 $neat-grid: (
   columns: 12,
@@ -35,3 +36,36 @@ $nav-break: (
   gutter: $base-spacing,
   media: '(min-width: 900px)'
 );
+
+
+// Destop first:
+
+// $large: (
+//   columns: 12,
+//   gutter: $base-spacing,
+//   media: '(max-width: $max-width)'
+// );
+//
+// $medium: (
+//   columns: 12,
+//   gutter: $base-spacing,
+//   media: '(max-width: 900px)'
+// );
+//
+// $small: (
+//   columns: 12,
+//   gutter: $base-spacing,
+//   media: '(max-width: 670px)'
+// );
+//
+// $extra-small: (
+//   columns: 12,
+//   gutter: $base-spacing,
+//   media: '(max-width: 450px)'
+// );
+//
+// $nav-break: (
+//   columns: 12,
+//   gutter: $base-spacing,
+//   media: '(max-width: 900px)'
+// );

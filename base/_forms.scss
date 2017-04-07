@@ -36,7 +36,7 @@ select {
   transition: border-color .3s;
 
   &:hover {
-    border-color: shade($base-border-color, 20%);
+    border-color: darken($base-border-color, 20%);
   }
 
   &:focus {
@@ -45,7 +45,7 @@ select {
   }
 
   &:disabled {
-    background-color: shade($base-background-color, 5%);
+    background-color: darken($base-background-color, 5%);
     cursor: not-allowed;
 
     &:hover {

@@ -3,6 +3,8 @@
 A Sass boilerplate organized with [SMACSS](https://smacss.com/), and topped with useful scaffold styles and variables with [BEM](http://getbem.com/introduction/) naming conventions.
 
 ## Structure
+
+
 - **all.scss:** The main entry file.  All partial imports go here.
 
 - **utility:** Sass utility helpers
