@@ -1,11 +1,12 @@
 // NEAT GRID SETTINGS - See http://neat.bourbon.io/ for documentation
 ////////////////////////////////////////////////////////////////
-// Mobile first:
 
 $neat-grid: (
   columns: 12,
   gutter: $base-spacing,
 );
+
+// Mobile first setup:
 
 $extra-large: (
   columns: 12,
@@ -38,7 +39,7 @@ $nav-break: (
 );
 
 
-// Destop first:
+// Destop first setup:
 
 // $large: (
 //   columns: 12,
