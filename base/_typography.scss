@@ -4,7 +4,7 @@
 body {
   color: $base-font-color;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: 1em;
   line-height: 1.5;
 }
 
@@ -14,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $alt-font-family;
+  font-family: $secondary-font-family;
   line-height: 1.2;
   margin: 0 0 $small-spacing;
 }
@@ -80,12 +80,12 @@ hr {
   color: $inverse-font-color;
 
   a {
-    color: $inverse-action-color;
+    color: $action-color;
 
     &:active,
     &:focus,
     &:hover  {
-      color: lighten($inverse-action-color, 20%);
+      color: lighten($action-color, 20%);
       outline: none;
     }
   }

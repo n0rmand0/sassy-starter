@@ -3,8 +3,7 @@
 
 // Typography
 $base-font-family:'Helvetica', sans-serif;
-$alt-font-family: $base-font-family;
-$base-font-size: 1em;
+$secondary-font-family: $base-font-family;
 
 // Sizes
 $max-width: 1300px;
@@ -16,13 +15,12 @@ $large-spacing: $base-spacing * 2;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ccc;
-$base-color: #88B04B;
+$green: #88B04B;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $base-color ;
+$action-color: $green;
 $inverse-font-color: #fff;
-$inverse-action-color: $base-color;
 
 // Background Colors
 $base-background-color: #fff;

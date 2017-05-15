@@ -45,8 +45,8 @@
   @extend %button-base;
 }
 
-// Alternate Button
-.button--alt {
+// Secondary Button
+.button--secondary {
   @extend %button-base;
   color: #fff!important;
   background-color: $action-color;

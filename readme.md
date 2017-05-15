@@ -19,6 +19,7 @@ A Sass boilerplate organized with [SMACSS](https://smacss.com/), and topped with
   - **animations:** Global animation keyframes
   - **buttons:** Global link and button styles
   - **forms:** Form styles
+  - **layout:** Layout styles
   - **lists:** List styles
   - **media:** Media styles. video, img, picture, etc.
   - **tables:** Table styles

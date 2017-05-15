@@ -1,21 +1,6 @@
 // GRID LAYOUT - Canned layout styles that can be used anywhere (modules prefixed with 'l')
 ////////////////////////////////////////////////////////////////
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html,
-body {
-  height: 100%;
-}
-
 .container {
   @include grid-container;
   position: relative;
@@ -23,16 +8,15 @@ body {
   margin: auto;
 }
 
-// Mobile first layouts
-////////////////////////////////////////////////////////////////
+// Mobile first layouts:
 
-// Full width layout
+// Full width
 .l-full {
   @include grid-column(12);
   @include grid-container;
 }
 
-// 2/3 layout
+// 2/3
 .l-long {
   @include grid-column(12);
   @include grid-media($large) {
@@ -40,7 +24,7 @@ body {
   }
 }
 
-// 1/2 layout
+// 1/2
 .l-split {
   @include grid-column(12);
   @include grid-media($large) {
@@ -48,7 +32,7 @@ body {
   }
 }
 
-// 1/3 layout
+// 1/3 
 .l-short {
   @include grid-column(12);
   @include grid-media($large) {
@@ -56,8 +40,7 @@ body {
   }
 }
 
-// Desktop first layouts
-////////////////////////////////////////////////////////////////
+// Desktop first layouts:
 //
 // // Full width layout
 // .l-full {

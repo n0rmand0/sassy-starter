@@ -1,17 +1,18 @@
 // SITE SECTIONS LAYOUT STYLES
 ////////////////////////////////////////////////////////////////
-
-.section--primary {
+%section {
   position: relative;
   padding: $large-spacing 0;
-  background:  $base-background-color;
   z-index: 99;
 }
 
+.section--primary {
+  @extend %section;
+  background:  $base-background-color;
+}
+
 .section--secondary {
+  @extend %section;
   @extend %inverse;
-  position: relative;
-  padding: $large-spacing 0;
   background: $secondary-background-color;
-  z-index: 99;
 }
