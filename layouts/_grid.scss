@@ -8,66 +8,13 @@
   margin: auto;
 }
 
-// Mobile first layouts:
-
 // Full width
 .l-full {
   @include grid-column(12);
   @include grid-container;
 }
 
-// 2/3
-.l-long {
-  @include grid-column(12);
-  @include grid-media($large) {
-    @include grid-column(8);
-  }
-}
-
 // 1/2
 .l-split {
   @include grid-column(12);
-  @include grid-media($large) {
-    @include grid-column(6);
-  }
 }
-
-// 1/3 
-.l-short {
-  @include grid-column(12);
-  @include grid-media($large) {
-    @include grid-column(4);
-  }
-}
-
-// Desktop first layouts:
-//
-// // Full width layout
-// .l-full {
-//   @include grid-column(12);
-//   @include grid-container;
-// }
-//
-// // 2/3 layout
-// .l-long {
-//   @include grid-column(8);
-//   @include grid-media($medium) {
-//     @include grid-column(12);
-//   }
-// }
-//
-// // 1/2 layout
-// .l-split {
-//   @include grid-column(6);
-//   @include grid-media($medium) {
-//     @include grid-column(12);
-//   }
-// }
-//
-// // 1/3 layout
-// .l-short {
-//   @include grid-column(4);
-//   @include grid-media($medium) {
-//     @include grid-column(12);
-//   }
-// }
