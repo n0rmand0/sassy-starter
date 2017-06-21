@@ -50,13 +50,13 @@ p {
 
 a {
   transition: color 0.2s;
-  color: $action-color;
+  color: $base-color;
   text-decoration: none;
 
   &:active,
   &:focus,
   &:hover {
-    color: darken($action-color, 20%);
+    color: darken($base-color, 20%);
     outline: none;
   }
 }
@@ -77,15 +77,15 @@ hr {
 // Alternate section colors
 ////////////////////////////////////////////////////////////////
 %inverse {
-  color: $inverse-font-color;
+  color: $secondary-font-color;
 
   a {
-    color: $action-color;
+    color: $base-color;
 
     &:active,
     &:focus,
     &:hover  {
-      color: lighten($action-color, 20%);
+      color: lighten($base-color, 20%);
       outline: none;
     }
   }
@@ -96,7 +96,7 @@ hr {
   h4,
   h5,
   h6 {
-    color: $inverse-font-color;
+    color: $secondary-font-color;
   }
 
 }

@@ -6,8 +6,8 @@
   display: inline-block;
   padding: .5em 1em;
   color: #fff !important;
-  background-color: $action-color;
-  border: 1px solid  $action-color;
+  background-color: $base-color;
+  border: 1px solid  $base-color;
   border-radius: $base-border-radius;
   font-size: 1.2em;
   font-weight: 400;
@@ -30,8 +30,8 @@
   &:active,
   &.active {
     color: #fff;
-    background-color: darken($action-color, 5);
-    border-color: $action-color;
+    background-color: darken($base-color, 5);
+    border-color: $base-color;
     outline: 0;
     text-decoration: none;
   }
@@ -49,14 +49,14 @@
 .button--secondary {
   @extend %button-base;
   color: #fff!important;
-  background-color: $action-color;
-  border-color: $action-color;
+  background-color: $base-color;
+  border-color: $base-color;
 
   &:hover,
   &:active,
   &.active{
-    background-color: lighten($action-color, 10);
-    border-color: $action-color;
+    background-color: lighten($base-color, 10);
+    border-color: $base-color;
   }
 }
 
