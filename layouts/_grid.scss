@@ -2,19 +2,24 @@
 ////////////////////////////////////////////////////////////////
 
 .container {
-  @include grid-container;
   position: relative;
+  display: grid;
   max-width: $max-width;
   margin: auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: $base-spacing;
 }
 
 // Full width
 .l-full {
-  @include grid-column(12);
-  @include grid-container;
+  grid-column: span 12;
 }
 
 // 1/2
 .l-split {
-  @include grid-column(12);
+  grid-column: span 12;
+
+  @include media($medium) {
+    grid-column: span 6;
+  }
 }

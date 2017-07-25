@@ -1,72 +1,32 @@
-// NEAT GRID SETTINGS - See http://neat.bourbon.io/ for documentation
+// GRID SETTINGS (mobile first)
 ////////////////////////////////////////////////////////////////
+// You may use the 'media($query)' mixin for any media queries.
+// example css:
+// @include media($large){ display: none; }
+// This setup also supports the neat grid framework: https://neat.bourbon.io/, but this is not required.
 
-$neat-grid: (
-  columns: 12,
-  gutter: $base-spacing,
-);
-
-// Mobile first setup:
+@mixin media($query){
+  @media #{ map-get($query, media) } {
+    @content;
+  }
+}
 
 $extra-large: (
-  columns: 12,
-  gutter: $base-spacing,
   media: '(min-width: $max-width)'
 );
 
 $large: (
-  columns: 12,
-  gutter: $base-spacing,
   media: '(min-width: 900px)'
 );
 
 $medium: (
-  columns: 12,
-  gutter: $base-spacing,
   media: '(min-width: 670px)'
 );
 
 $small: (
-  columns: 12,
-  gutter: $base-spacing,
   media: '(min-width: 450px)'
 );
 
 $nav-break: (
-  columns: 12,
-  gutter: $base-spacing,
   media: '(min-width: 900px)'
 );
-
-
-// Destop first setup:
-
-// $large: (
-//   columns: 12,
-//   gutter: $base-spacing,
-//   media: '(max-width: $max-width)'
-// );
-//
-// $medium: (
-//   columns: 12,
-//   gutter: $base-spacing,
-//   media: '(max-width: 900px)'
-// );
-//
-// $small: (
-//   columns: 12,
-//   gutter: $base-spacing,
-//   media: '(max-width: 670px)'
-// );
-//
-// $extra-small: (
-//   columns: 12,
-//   gutter: $base-spacing,
-//   media: '(max-width: 450px)'
-// );
-//
-// $nav-break: (
-//   columns: 12,
-//   gutter: $base-spacing,
-//   media: '(max-width: 900px)'
-// );

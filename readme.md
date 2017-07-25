@@ -40,9 +40,3 @@ A Sass boilerplate organized with [SMACSS](https://smacss.com/), and topped with
 - **themes** All themes and override styles
   - **ie:** Internet Explorer styles
   - **print:** Print styles
-
-
-## Get Started
-
-This boilerplate requires **Neat 2**.  Install Neat into your stylesheet root directory and start Sassing.
-- **Neat 2** - [neat.bourbon.io](http://neat.bourbon.io/)
