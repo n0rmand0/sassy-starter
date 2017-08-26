@@ -34,9 +34,6 @@ A Sass boilerplate organized with [SMACSS](https://smacss.com/), and topped with
 - **modules** Modules that can be used anywhere. Break bigger modules into their own file.
   - **global:** Global modules
 
-- **pages:** Page specific styles that don't fit into modules
-  - **home:** Home page styles
-
 - **themes** All themes and override styles
   - **ie:** Internet Explorer styles
   - **print:** Print styles
