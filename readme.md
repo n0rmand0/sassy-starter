@@ -35,5 +35,4 @@ A Sass boilerplate organized with [SMACSS](https://smacss.com/), and topped with
   - **global:** Global modules
 
 - **themes** All themes and override styles
-  - **ie:** Internet Explorer styles
   - **print:** Print styles
