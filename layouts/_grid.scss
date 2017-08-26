@@ -1,10 +1,11 @@
-// GRID LAYOUT - Canned layout styles that can be used anywhere (modules prefixed with 'l')
+// GRID LAYOUT - Canned layout styles that can be used anywhere
 ////////////////////////////////////////////////////////////////
 
-.container {
+.l-container {
   position: relative;
   display: grid;
   max-width: $max-width;
+  padding: 0 $base-spacing;
   margin: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: $base-spacing;

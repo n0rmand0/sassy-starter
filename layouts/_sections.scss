@@ -6,12 +6,12 @@
   z-index: 99;
 }
 
-.section--primary {
+.l-section {
   @extend %section;
   background:  $base-background-color;
 }
 
-.section--secondary {
+.l-section--secondary {
   @extend %section;
   @extend %inverse;
   background: $secondary-background-color;
