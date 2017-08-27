@@ -3,36 +3,35 @@
 A Sass boilerplate organized with [SMACSS](https://smacss.com/), and topped with useful scaffold styles and variables with [BEM](http://getbem.com/introduction/) naming conventions.
 
 ## Structure
-
-
-- **all.scss:** The main entry file.  All partial imports go here.
-
-- **utility:** Sass utility helpers
-  - **variables:** Default colors, sizes, spacing, etc.
-  - **grid-settings:** Breakpoints and neat setup
-  - **mixins:** Global mixins
-  - **extends:** Global extends
-
-- **base:** All basic element of the site
-  - **reset:** CSS browser reset
-  - **fonts:** Font imports
-  - **animations:** Global animation keyframes
-  - **buttons:** Global link and button styles
-  - **forms:** Form styles
-  - **layout:** Layout styles
-  - **lists:** List styles
-  - **media:** Media styles. video, img, picture, etc.
-  - **tables:** Table styles
-  - **typography:** Body typography, H, p tags, etc.
-
-- **layout** All styles used to lay elements out on the page
-  - **grid:** Canned layout styles that can be used anywhere (modules prefixed with 'l')
-  - **sections:** Site sections layout styles
-  - **header:** Site header layout styles
-  - **footer:** Site footer layout styles
-
-- **modules** Modules that can be used anywhere. Break bigger modules into their own file.
-  - **global:** Global modules
-
-- **themes** All themes and override styles
-  - **print:** Print styles
+```
+stylesheets/
+├── utility/
+│   ├── variables.scss
+│   ├── grid-settings.scss
+│   ├── mixins.scss
+│   └── extends.scss
+│
+├── base/
+│   ├── reset.scss
+│   ├── fonts.scss
+│   ├── animations.scss
+│   ├── buttons.scss
+│   ├── forms.scss
+│   ├── layout.scss
+│   ├── lists.scss
+│   ├── media.scss
+│   ├── tables.scss
+│   └── typography.scss
+│
+├── layout/
+│   ├── grid.scss
+│   ├── sections.scss
+│   ├── header.scss
+│   └── footer.scss
+│
+├── modules/
+│   └── global.scss
+│  
+└── themes/
+    └── print.scss
+```
