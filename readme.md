@@ -1,10 +1,30 @@
-# Sassy Starter
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/gluten-free.svg)](http://forthebadge.com)
 
-A Sass boilerplate organized with [SMACSS](https://smacss.com/), and topped with useful scaffold styles and variables with [BEM](http://getbem.com/introduction/) naming conventions.
+# Sassy Starter
+A bare bones Sass boilerplate based on Scalable and Modular Architecture for CSS ([SMACSS](https://smacss.com/)) and topped with useful scaffold styles and variables.
+
+## Setup
+This boilerplate assumes you you already have a build process in place. This is compatible with any workflow that compiles scss — webpack, gulp, rails, etc.
+
+**Plug & Play:**  Just plug this into your project. Use `all.scss` as the entry point for all the scss.
+
+## Features
+- [SMACSS](https://smacss.com/) style organization for SCSS
+- [Normalize.css](https://necolas.github.io/normalize.css/) reset
+- Base global variables
+- Base styles for element selectors
+- Media query mixin with customizable query variables
+- Example grid layout components
+
 
 ## Structure
 ```
 stylesheets/
+│
+├── all.scss
+│
 ├── utility/
 │   ├── variables.scss
 │   ├── grid-settings.scss
@@ -24,10 +44,10 @@ stylesheets/
 │   └── typography.scss
 │
 ├── layout/
+│   ├── footer.scss
 │   ├── grid.scss
-│   ├── sections.scss
 │   ├── header.scss
-│   └── footer.scss
+│   └── sections.scss
 │
 ├── modules/
 │   └── global.scss
@@ -35,3 +55,29 @@ stylesheets/
 └── themes/
     └── print.scss
 ```
+
+## Media Queries
+Define your media queries in `grid-settings.scss`.  Media queries are stored as a sass map variable. This query setup also supports the neat grid framework: https://neat.bourbon.io/, but it is not required.
+
+Example variable:
+```
+$extra-large: (
+  media: '(min-width: 900px)'
+);
+```
+
+You may use the included `media($query)` mixin for any media query preset.
+
+Example media query:
+
+```
+@include media($large){
+  display: none;
+}
+```
+
+## Grid Layout
+The grid framework in `grid.scss` is left intentionally open so that you can build your own reusable layout rules as needed.   
+https://smacss.com/book/type-layout
+
+Several example rules are included—built in `css grid`.
