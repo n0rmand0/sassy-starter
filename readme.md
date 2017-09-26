@@ -57,7 +57,7 @@ stylesheets/
 ```
 
 ## Media Queries
-Define your media queries in `grid-settings.scss`.  Media queries are stored as a sass map variable. This query setup also supports the neat grid framework: https://neat.bourbon.io/, but it is not required.
+Define your media queries in `_grid-settings.scss`.  Media queries are stored as a sass map variable. This query setup also supports the neat grid framework: https://neat.bourbon.io/, but it is not required.
 
 Example variable:
 ```
