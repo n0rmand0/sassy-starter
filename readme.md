@@ -16,7 +16,7 @@ This boilerplate assumes you you already have a build process in place. This is 
 - Base global variables
 - Base styles for element selectors
 - Media query mixin with customizable query variables
-- Example grid layout components
+- Example grid layout rules
 
 
 ## Structure
