@@ -76,8 +76,10 @@ Example media query:
 }
 ```
 
-## Grid Layout
-The grid framework in `grid.scss` is left intentionally open so that you can build your own reusable layout rules as needed.   
+## Layout Rules
 https://smacss.com/book/type-layout
 
-Several example rules are included—built in `css grid`.
+Major layout rules are prefixed with `l-`.  Several examples are included in `_sections.scss` and `_grid.scss`.
+
+The grid framework in `_grid.scss` is left intentionally open so that you can build your own reusable layout rules as needed.   
+`_grid.scss` includes several example rules--built in `css grid`.
