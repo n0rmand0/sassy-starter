@@ -61,7 +61,7 @@ Define your media queries in `grid-settings.scss`.  Media queries are stored as 
 
 Example variable:
 ```
-$extra-large: (
+$large: (
   media: '(min-width: 900px)'
 );
 ```
