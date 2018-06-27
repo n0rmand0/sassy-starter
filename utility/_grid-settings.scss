@@ -1,4 +1,4 @@
-// GRID SETTINGS (mobile first)
+// GRID SETTINGS
 ////////////////////////////////////////////////////////////////
 // You may use the 'media($query)' mixin for any media query preset.
 // example css:
@@ -11,22 +11,45 @@
   }
 }
 
-$extra-large: (
-  media: '(min-width: $max-width)'
-);
-
+// desktop first queries
 $large: (
-  media: '(min-width: 900px)'
+  media: '(max-width: $max-width)'
 );
 
 $medium: (
-  media: '(min-width: 670px)'
+  media: '(max-width: 900px)'
 );
 
 $small: (
-  media: '(min-width: 450px)'
+  media: '(max-width: 670px)'
+);
+
+$extra-small: (
+  media: '(max-width: 450px)'
 );
 
 $nav-break: (
-  media: '(min-width: 900px)'
+  media: '(max-width: 900px)'
 );
+
+
+// mobile first queries
+// $extra-large: (
+//   media: '(min-width: $max-width)'
+// );
+//
+// $large: (
+//   media: '(min-width: 900px)'
+// );
+//
+// $medium: (
+//   media: '(min-width: 670px)'
+// );
+//
+// $small: (
+//   media: '(min-width: 450px)'
+// );
+//
+// $nav-break: (
+//   media: '(min-width: 900px)'
+// );

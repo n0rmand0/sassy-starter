@@ -3,39 +3,8 @@
 
 .l-container {
   position: relative;
-  display: grid;
+  display: block;
   max-width: $max-width;
   padding: 0 $base-spacing;
   margin: auto;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: $base-spacing;
-}
-
-// Full width
-.l-full {
-  grid-column: span 12;
-}
-
-// 1/3
-.l-short {
- grid-column: span 12;
- @include media($medium) {
-   grid-column: span 4;
- }
-}
-
-// 1/2
-.l-split {
- grid-column: span 12;
- @include media($medium) {
-   grid-column: span 6;
- }
-}
-
-// 2/3
-.l-long {
- grid-column: span 12;
- @include media($medium) {
-   grid-column: span 8;
- }
 }

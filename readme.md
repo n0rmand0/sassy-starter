@@ -16,7 +16,8 @@ This boilerplate assumes you you already have a build process in place. This is 
 - Base global variables
 - Base styles for element selectors
 - Media query mixin with customizable query variables
-- Example grid layout rules
+- Mobile First & Desktop First query examples available in `utility/grid-settings`
+- Example grid layout rules in `layout/grid`
 
 
 ## Structure
@@ -81,4 +82,4 @@ https://smacss.com/book/type-layout
 
 Major layout rules are prefixed with `l-`.  Several examples are included in `_sections.scss` and `_grid.scss`.
 
-The grid framework in `_grid.scss` is left intentionally open so that you can build your own reusable layout rules as needed. `_grid.scss` includes several example rules--built in `css grid`.
+The grid framework in `_grid.scss` is left intentionally open so that you can build your own reusable layout rules as needed.
