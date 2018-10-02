@@ -1,31 +1,7 @@
-// UTILITY
-@import "utility/variables";
-@import "utility/grid-settings";
-@import "utility/mixins";
-@import "utility/extends";
+// ALL IMPORTS BY CATEGORY
 
-// BASE
-@import "base/reset";
-@import "base/fonts";
-@import "base/animations";
-@import "base/buttons";
-@import "base/forms";
-@import "base/layout";
-@import "base/lists";
-@import "base/media";
-@import "base/tables";
-@import "base/typography";
+@import "utility/utility";
+@import "base/base";
+@import "layouts/layouts";
+@import "modules/modules"
 
-// LAYOUT
-@import "layouts/footer";
-@import "layouts/grid";
-@import "layouts/header";
-@import "layouts/sections";
-
-// MODULES
-@import "modules/global";
-
-// THEMES
-@import "themes/print";
-
-// VENDOR

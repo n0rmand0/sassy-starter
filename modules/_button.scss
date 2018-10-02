@@ -1,5 +1,5 @@
 // BASE BUTTON STYLES
-////////////////////////////////////////////////////////////////
+// All rules related to the .button module
 
 %button-base {
   transition: background, .2s;
@@ -41,7 +41,6 @@
 ////////////////////////////////////////////////////////////////
 
 // Main Button
-button,
 .button {
   @extend %button-base;
 }

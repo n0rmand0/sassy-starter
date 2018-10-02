@@ -19,14 +19,19 @@ This boilerplate assumes you you already have a build process in place. This is 
 - Mobile First & Desktop First query examples available in `utility/grid-settings`
 - Example grid layout rules in `layout/grid`
 
+## Categorization
+- **Utility** - All variables, mixins, extends, and functions used by SASS.  No CSS should be output from these files.
+- **Base** - Al rules applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudo-classes.  No Class or ID selectors should live within these files.
+- **Layouts** - Layout rules dictating the major reuseable components of a page.
+- **Modules** - All rules for modules designed to exhist as standalone components.
 
-## Structure
+## Folder Structure
 ```
 stylesheets/
 │
 ├── all.scss
 │
-├── utility/
+├── utility/  
 │   ├── variables.scss
 │   ├── grid-settings.scss
 │   ├── mixins.scss
@@ -36,7 +41,6 @@ stylesheets/
 │   ├── reset.scss
 │   ├── fonts.scss
 │   ├── animations.scss
-│   ├── buttons.scss
 │   ├── forms.scss
 │   ├── layout.scss
 │   ├── lists.scss
@@ -44,17 +48,12 @@ stylesheets/
 │   ├── tables.scss
 │   └── typography.scss
 │
-├── layout/
-│   ├── footer.scss
+├── layout/ 
 │   ├── grid.scss
-│   ├── header.scss
 │   └── sections.scss
 │
-├── modules/
-│   └── global.scss
-│  
-└── themes/
-    └── print.scss
+└── modules/
+    └── button.scss
 ```
 
 ## Media Queries
