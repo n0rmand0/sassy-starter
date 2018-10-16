@@ -14,6 +14,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: $base-font-color;
   font-family: $secondary-font-family;
   line-height: 1.2;
   margin: 0 0 $small-spacing;
@@ -49,9 +50,9 @@ p {
 }
 
 a {
-  transition: color 0.2s;
   color: $base-color;
   text-decoration: none;
+  transition: color 0.2s;
 
   &:active,
   &:focus,
@@ -66,9 +67,9 @@ pre {
 }
 
 hr {
+  margin: $base-spacing 0;
   border-bottom: $base-border;
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: $base-spacing 0;
 }
