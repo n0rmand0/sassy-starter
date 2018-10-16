@@ -1,5 +1,6 @@
 // GLOBAL MIXINS
 
+// font smoothing for anti-aliasing on macOS
 @mixin font-smoothing($value: on) {
     @if $value == on {
         -webkit-font-smoothing: antialiased;
@@ -10,3 +11,30 @@
         -moz-osx-font-smoothing: auto;
     }
 }
+
+// inverse color scheme for basic typography
+@mixin inverse {
+    color: $secondary-font-color;
+  
+    a {
+      color: $base-color;
+  
+      &:active,
+      &:focus,
+      &:hover  {
+        color: lighten($base-color, 20%);
+        outline: none;
+      }
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $secondary-font-color;
+    }
+  
+  }
+  

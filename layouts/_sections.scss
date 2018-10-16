@@ -7,13 +7,15 @@
   z-index: 99;
 }
 
+// basic section
 .l-section {
   @extend %section;
   background:  $base-background-color;
 }
 
+// basic section with inverted typography colors
 .l-section--secondary {
   @extend %section;
-  @extend %inverse;
+  @include inverse;
   background: $secondary-background-color;
 }

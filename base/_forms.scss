@@ -1,10 +1,12 @@
-// BASE FORM STYLES
+$_form-background-color: #fff;
+$_form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$_form-box-shadow-focus: $_form-box-shadow, 0 0 5px rgba($base-color, 0.7);
 
 fieldset {
   background-color: transparent;
   border: 0;
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
 
 legend {
@@ -19,20 +21,36 @@ label {
   margin-bottom: $small-spacing / 2;
 }
 
-input,
-textarea,
-select {
+// all text inputs
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
+input:not([type]),
+textarea {
   display: block;
-  width: 100%;
-  margin-bottom: $small-spacing;
-  padding: $small-spacing;
   font-family: $base-font-family;
-  font-size: 1em;
-  background-color: $base-background-color;
+  font-size: 16px;
+  appearance: none;
+  background-color: $_form-background-color;
   border: $base-border;
   border-radius: $base-border-radius;
+  box-shadow: $_form-box-shadow;
   box-sizing: border-box;
+  margin-bottom: $small-spacing;
+  padding: $base-spacing / 3;
   transition: border-color .3s;
+  width: 100%;
 
   &:hover {
     border-color: darken($base-border-color, 20%);
@@ -40,37 +58,48 @@ select {
 
   &:focus {
     border-color: $base-color;
+    box-shadow: $_form-box-shadow-focus;
     outline: none;
   }
 
   &:disabled {
-    background-color: darken($base-background-color, 5%);
+    background-color: darken($_form-background-color, 5%);
     cursor: not-allowed;
 
     &:hover {
       border: $base-border;
     }
   }
+
+  &::placeholder {
+    color: lighten($base-font-color, 40%);
+  }
 }
 
-select {
-  margin-bottom: $base-spacing;
-  max-width: 100%;
-  width: auto;
-}
 
 textarea {
   resize: vertical;
 }
 
-[type="search"] {
-  appearance: none;
-}
-
 [type="checkbox"],
 [type="radio"] {
   display: inline;
+  margin-right: $small-spacing / 2;
+}
+
+[type="file"] {
+  margin-bottom: $small-spacing;
+  width: 100%;
+}
+
+select{
+  appearance: auto; 
+  margin-bottom: $small-spacing;
   width: auto;
-  margin: 0 $small-spacing/2 0 0;
-  padding: 0;
+
+  &:focus {
+    border-color: $base-color;
+    box-shadow: $_form-box-shadow-focus;
+    outline: none;
+  }
 }

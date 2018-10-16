@@ -1,4 +1,5 @@
 // BASE TYPOGRAPHY STYLES
+// for inverted color schemes, see global mixin `inverse`.
 
 body {
   color: $base-font-color;
@@ -70,32 +71,4 @@ hr {
   border-right: none;
   border-top: none;
   margin: $base-spacing 0;
-}
-
-
-// Alternate section colors
-////////////////////////////////////////////////////////////////
-%inverse {
-  color: $secondary-font-color;
-
-  a {
-    color: $base-color;
-
-    &:active,
-    &:focus,
-    &:hover  {
-      color: lighten($base-color, 20%);
-      outline: none;
-    }
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: $secondary-font-color;
-  }
-
 }
