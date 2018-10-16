@@ -16,6 +16,6 @@
 // basic section with inverted typography colors
 .l-section--secondary {
   @extend %section;
-  @include inverse;
+  @include inverse-colors;
   background: $secondary-background-color;
 }

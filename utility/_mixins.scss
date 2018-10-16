@@ -13,7 +13,7 @@
 }
 
 // inverse color scheme for basic typography
-@mixin inverse {
+@mixin inverse-colors {
     color: $secondary-font-color;
   
     a {
